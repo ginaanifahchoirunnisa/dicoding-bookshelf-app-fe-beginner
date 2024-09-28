@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="mybookshelf.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="content" id="title">
+            <h1>MY BOOKSHELF</h1>
+        </div>
+
+        <div class="content" id="form-input">
+            <form id="book-form">
+                <table>
+                    <tr>
+                        <td>Book Title</td>
+                        <td>:</td>
+                        <td><input type="text" id="book-title" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Book Category</td>
+                        <td>:</td>
+                        <td>
+                            <select id="book-category">
+                                <option>Comic</option>
+                                <option>Self Improvement</option>
+                                <option>History</option>
+                                <option>Religion</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Total Pages</td>
+                        <td>:</td>
+                        <td><input type="text" id="book-pages" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>:</td>
+                        <td>
+                            <select id="book-status">
+                                <option value="Unread">Unread</option>
+                                <option value="Have Read">Have Read</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+
+        <div class="categories">
+            <div class="unread-category">
+                <div class="c-title">UNREAD BOOKS</div>
+                <div class="list-books" id="unread-list"></div>
+            </div>
+
+            <div class="already-read-category">
+                <div class="c-title">HAVE READ BOOKS</div>
+                <div class="list-books" id="read-list"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
